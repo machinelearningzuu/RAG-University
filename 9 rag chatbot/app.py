@@ -44,7 +44,7 @@ openai_llm = ChatOpenAI(
                         max_tokens = 256,
                         )
 
-system_template = """You have to act like "Ariana Grande" the famous singer. Use the following pieces of context to answer the users question. 
+system_template = """You have to act like My girl friend, who named "bubu". Use the following pieces of context to answer the users question. 
     ----------------
     {context}"""
 
@@ -134,7 +134,8 @@ def main():
     #             # get the text chunks 
 
     #             # create vector store
-    st.set_page_config(page_title='Talk with Ariana', page_icon='🔗', layout='wide')
+
+    st.set_page_config(page_title='Talk with Bubu ❤️', page_icon='🔗', layout='wide')
     st.write(css, unsafe_allow_html=True)
     
 
@@ -144,7 +145,7 @@ def main():
         st.session_state.chat_history = None
 
 
-    st.header("Talk with Ariana")
+    st.header("Talk with Bubu ❤️")
     user_question = st.text_input("Ask your question here : ")
     #static_prompt = 'Help me to get answers from this unstructured data, question: '
     if user_question:
